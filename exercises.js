@@ -67,6 +67,22 @@
 
    }// end of block
 
+// EX #7
+  // Use Object.create to make two instances of Animal named duck and beagle. Next, modify the code so that instances of Dog inherit from Animal.
+
+  {
+      
+      function Animal(){};
+
+      Animal.prototype = {
+         constructor: Animal,
+         eat: function(){
+            console.log('nom nom nom');
+         }
+      };
+
+  }// end block
+
 
 
 
