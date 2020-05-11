@@ -1,10 +1,4 @@
-//Ex #2
-  //Create a new instance of the House constructor, calling it myHouse and passing a number of bedrooms. Then, verify that it is an instance of House.
+//EX #5
+ //Add the property numLegs and the two methods eat() and describe() to the prototype of Dog by setting the prototype to a new object.
 
-  {
-   function House(numBedrooms) {
-      this.numBedrooms = numBedrooms;
-    }
-    
-      
-   }// end block
+
