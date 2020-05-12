@@ -132,3 +132,29 @@
   }// end block
 
   
+//EX#11
+  // Create a mixin named glideMixin that defines a method named glide. Then use the glideMixin to give both bird and boat the ability to glide.
+  {
+
+   let bird = {
+      name: "Donald",
+      numLegs: 2
+    };
+    
+    let boat = {
+      name: "Warrior",
+      type: "race-boat"
+    };
+    
+  }// end block
+
+
+  // EX#12
+   // Change how weight is declared in the Bird function so it is a private variable. Then, create a method getWeight that returns the value of weight 15.
+
+   {
+      function Bird() {
+         this.weight = 15;
+       
+       }       
+   } // end block
