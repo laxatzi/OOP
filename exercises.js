@@ -85,7 +85,7 @@
 
 
 
-  //EX#8
+//EX#8
     // Fix the code so duck.constructor and beagle.constructor return their respective constructors
     {
       function Bird() { }
@@ -102,7 +102,33 @@
     }// end block
 
     
-    
+//EX#9
+  // Add all necessary code so the Dog object inherits from Animal and the Dog's prototype constructor is set to Dog. Then add a bark() method to the Dog object so that beagle can both eat() and bark(). The bark() method should print "Woof!" to the console.
 
+  function Animal(){};
+  Animal.prototype.eat = function(){
+     console.log('nom nom nom');
+  }
+
+  function Dog(){};
+  
+  let beagle = new Dog();
+    
+//EX#10
+  // Override the fly() method for Penguin so that it returns "Alas, this is a flightless bird."
+
+  {
+      function Bird(){};
+      Bird.prototype.fly = function() {
+         return 'I am flying!';
+      }
+
+      function Penguin(){};
+      Penguin.prototype = Object.create(Bird.prototype);
+      Penguin.prototype.constructor = Penguin;
+      
+      let penguin = new Penguin();
+
+  }// end block
 
   
